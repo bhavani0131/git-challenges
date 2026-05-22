@@ -1,7 +1,7 @@
 import boto3
 
 # Initialize the EC2 client
-ec2 = boto3.client('ec2', region_name='us-east-1')
+ec2 = boto3.client('ec2', region_name='us-west-2')
 
 # Launch a single t2.micro instance
 response = ec2.run_instances(
