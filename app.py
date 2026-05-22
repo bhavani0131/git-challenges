@@ -6,7 +6,7 @@ ec2 = boto3.client('ec2', region_name='us-east-1')
 # Launch a single t2.micro instance
 response = ec2.run_instances(
     ImageId='ami-0c7217cdde317cfec',  # Must match your region
-    InstanceType='t2.micro',
+    InstanceType='t2.medium',
     MinCount=1,
     MaxCount=1
 )
